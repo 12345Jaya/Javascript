@@ -1,0 +1,11 @@
+If we are having a shopping website where cost of products is $20.99 and shipping costs $7.99, tax of 10%, the total amount paid is?
+
+A) If we calculate (20.99+7.99)*0.1 = 2.8979999999999997. It gives double value which is most precise.
+   So convert it to cents first *100 
+   (2099+799)*0.1 = 289.8
+   Then convert it to dollars
+   (2099+799)*0.1/100 = 289.8/100 = 2.898
+   When we round it off it gives us 3
+   Math.round(2.898) = 3
+   but to get accurate results, we first round of the cents and convert to dollars.
+   Math.round((2099+799)*0.1)/100 = 290/100 = 2.9
