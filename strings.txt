@@ -1,0 +1,23 @@
+1) 'text' + 'more' = 'textmore'
+   'text' + 'some'+ 'more' = 'textsomemore' (strings are concatenated)
+2) '10'+'10' = '1010' (concatenation) 
+    10 + 10 = 20 (simple addition)
+3) alert('hello') gives a popup with hello
+4) typeof 10 = 'number'
+   typeof '10' = 'string'
+5) 'hello' + 3 = 'hello3' (automatic type conversion/ type coercion from number to string)
+6) '$'+20.95+7.99 = '$20.957.99' (adds from left to right) 
+   To correct it we use '$'+(20.95+7.99) = '$28.93999999999998'
+   So avoid this inaccuracies, we do '$' + (2095+799)/100 = '$28.94
+   If it is not allowing pasting, type allow pasting.
+
+Creating strings
+----------------
+1) ''
+2) ""(double quotes)   NOTE:-escape character \
+3) ``(back ticks) -> template strings.
+   Template strings have a property of interpolation. (insert value directly into string)
+   1. Items(2) can be written as `Items(${1+1})`   we use ${}
+   2. Another feature is multi line string
+      `some
+      text`  (If we press enter, that creates \n character)
