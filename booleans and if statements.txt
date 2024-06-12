@@ -1,0 +1,64 @@
+Boolean values
+--------------
+condition -> gives a Boolean value
+Boolean - true, false
+
+3 >  5 false
+5 <= 5 true
+5 === 5 true 
+5 !== 5 false
+
+Truthy values -> other than falsy
+Falsy values  -> 0, '', NaN, undefined, null, false
+
+comparison operators (have lower priority than math)
+---------------------
+<
+>
+<=
+>=
+=== to check whether two values are equal or not
+!== to check whether two values are not equal
+
+== it converts both the values to same type and then compares
+5 == 5.00    true
+5 == '5'     true
+5 == '5.00'  true
+not really a good one, it should give false so use ===,!==
+
+if(condition/ truthy value)
+   //statements
+
+if condition is true or truthy value then the statements are executed else ignored.
+
+if(true) console.log('hi');
+if(age>18) console.log("You can vote");
+else console.log("You are not eligible");
+
+if -> else if -> else
+
+NaN (caused by invalid math)
+---
+Not a number 
+console.log('text' / 5);  //NaN
+
+Undefined (something doesn't have a value)
+---------
+let variable;
+console.log(variable);  //undefined
+
+Additional operators
+--------------------
+- ternary operator ?:   (condition)? truthy : falsy ;
+- guard operator   &&
+- default operator ||
+
+
+
+
+
+
+
+
+
+
