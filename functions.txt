@@ -1,0 +1,35 @@
+Functions
+---------
+lets us reuse code.
+
+function fun(){
+   console.log('hello');
+}
+
+fun();   //prints 'hello'
+fun();
+
+Scope
+-----
+- Limits where a variable exists
+- any variable between {} is available between the braces only.
+
+Parameter -> puts value into a function
+Return -> gets value out of a function
+
+function fun(val){
+    console.log(val+2);
+}
+
+fun(4);    //passing value into a function. (argument)
+
+Functions are -> alert(), console.log()
+
+Default parameter
+-----------------
+function fun(val, mul=2){
+    console.log(val*mul);
+}
+
+fun(3,4);   //12
+fun(3);     //6
