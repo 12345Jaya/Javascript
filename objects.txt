@@ -1,0 +1,140 @@
+Objects
+-------
+An object groups multiple values together. (property:value pairs separated by commas)
+
+Ex:-   const student={
+---      rollNo: 2,   
+         name: "Jaya",
+         age: 20
+       };
+
+console.log(student);         // {roolNo: 2, name: "Jaya", age: 20}
+console.log(student.name);    //"Jaya"
+console.log(typeof product);  //object 
+
+. To change a value inside an object, we can just assign the value
+   student.name = "Pavani";
+. student.ID = undefined
+
+. To delete a property we use delete student.age;
+
+To access objects
+-----------------
+1) Object Notation  .  //default
+2) Bracket Notation [] //lets us use properties that don't work with dot notation.
+
+console.log(student.rollNo);
+console.log(student['rollNo']);
+
+console.log(student.reading-time);  //error
+console.log(student['reading-time']);
+
+. Inside object we can store any type of values like objects, functions etc
+
+const product = {
+    name: 'shirt',
+    ['delivery-time']: '1 day',
+    rating = {       //nested objects
+	stars: 4.5, 
+	count: 10
+    };
+    function fun(){
+	console.log('function inside an object');
+    }
+};
+
+console.log(product2.rating.count);   //10
+console.log(product2.rating['count']);
+console.log(product2['rating'].count);
+console.log(product2['rating']['count']);
+console.log(product2.fun())    //function inside an object (method)
+
+Math.random()
+console.log()
+ obj   method
+
+console.log(typeof console)     //object
+console.log(typeof console.log) //method
+
+Built-in objects (provided by the language)
+----------------
+1) JSON
+2) local storage
+
+JSON (JavaScript object notation)
+----
+. It is similar to JavaScript object syntax but has less features.
+. In JSON, all properties are strings.
+. The values and properties which are strings, are represented in double quotes.
+. JSON doesn't support functions inside an object.
+
+. JSON syntax can be understood by almost every programming language -> more universal.
+
+Use:-  1) When we send data between computers(they may also use diff programming languages)
+---    2) When we store data.
+
+. JSON objects allows conversion from JSON to javascript object and javascript to JSON object.
+. To convert javascript object to JSON -> const a   = JSON.stringify(student)
+  To convert JSON to javascript object -> const obj = JSON.parse(a)
+
+Local storage (stores values inspite of refresh)
+-------------
+. Stores values permenantly.
+. localStorage.setItem(name,string/JSON);
+  localStorage.getItem(name)
+
+. localStorage.setItem('student',JSON.stringify(student));
+  const s=JSON.parse(localStorage.getItem('student'));
+
+. const object1 = { message: 'hello'};
+  const object2 = { message: 'hello'};
+  const object3 = object1;
+
+  console.log(object1 === object2)  //gives false because it compares references but not values i.e., computer memory locations are different. 
+
+  console.log(object3 === object1)  //true
+
+. const object4 = {
+     message: 'hello',
+     price: 800	
+  };
+. const message = object4.message;
+  const { message } = object4;  //destructuring.
+  // both lines are same
+
+. const {message, price} = object4;
+
+.  const object5 = {
+     message: message //property: object
+   };
+   const object5 = {  //short hand property
+     message
+   };
+   
+. const obj = {
+      method: function fun(){
+         console.log('Jaya');
+      }
+  };
+  const obj = {
+      method(){        //short hand method 
+         console.log('Jaya')
+      }
+  };
+  both are same
+  obj.method
+  obj.method() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
