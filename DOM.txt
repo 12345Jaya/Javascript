@@ -52,3 +52,8 @@ Event Listeners
 
 . <input onkeydown="console.log(event.key)">
    
+Number()
+String()
+'10'+10 = 1010
+'10'-10 = 0  (automatically converts into number)
+// type coercion
