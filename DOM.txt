@@ -1,0 +1,54 @@
+DOM (Document Object Model)
+---
+. It is also a built-in object.
+. This object changes the webpage. (models the webpage)
+. DOM combines JavaScript and HTML together.
+. It gives JavaScript full control of the webpage.
+. Here HTML element is converted into JavaScript object.
+
+. document.body.innerHTML = 'hello'
+  ( obj.obj.property )
+. document.title = 'Good job!'
+. console.log(typeof document.body);
+. document.body.innerHTML = '<button>Good job!</button>
+. console.log(document.querySelector('button')); //first ele
+. document.querySelector('button').innerHTML
+. <button>hello</button>
+  <button class="js-button">second button</button>
+  console.log(document.querySelector('.js-button'));
+
+. HTML ele are javascript objects.
+
+Properties
+----------
+1) document.title
+2) document.body  (innerHTML)
+
+Methods
+-------
+1) document.querySelector() -> lets us get any ele from page and put it inside JS
+. innerHTML, innerText (innerHTML may have extra spaces)
+2) document.getElementById()
+3) document.getElementByClassName()
+
+. document.querySelector('input').value //string   ->25
+  If we want to add 10, it becomes 2510
+  but to get 35, we use Number()
+
+. Number(document.querySelector('input').value)+10
+
+. clicks,keydowns -> events
+  onclick, onkeydown -> event listeners
+
+Event Listeners
+---------------
+1) onclick       = click
+2) onkeydown     = key press
+3) onscroll      = scrolling
+4) onmouseenter  = hovering over
+5) onmouseleave  = stop hovering over
+
+// Every event listener gets an event object.
+
+. <input onkeydown="console.log(event.key)">
+   
