@@ -82,6 +82,7 @@ Local storage (stores values inspite of refresh)
 . Stores values permenantly.
 . localStorage.setItem(name,string/JSON);
   localStorage.getItem(name)
+  localStorage.removeItem('score'); //name
 
 . localStorage.setItem('student',JSON.stringify(student));
   const s=JSON.parse(localStorage.getItem('student'));
