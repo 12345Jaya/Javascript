@@ -57,3 +57,12 @@ String()
 '10'+10 = 1010
 '10'-10 = 0  (automatically converts into number)
 // type coercion
+
+Window object (built-in object)
+------------- 
+It represents the browser.
+. Web page is inside the browser so document object is inside window object.
+. window.document
+  window.console
+  window.alert
+. To access these methods why don't we type window? because the Javascript automatically adds window.
