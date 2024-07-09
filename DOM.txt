@@ -66,3 +66,4 @@ It represents the browser.
   window.console
   window.alert
 . To access these methods why don't we type window? because the Javascript automatically adds window.
+
