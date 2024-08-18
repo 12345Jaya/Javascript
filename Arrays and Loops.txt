@@ -1,0 +1,44 @@
+Arrays  []
+------
+. It is another type of value.
+. Represents a list of values.
+. const arr = [10,20,30];
+. To access the values in an array or change values we use indexing.
+  arr[0] = 10;
+
+. We can put different values in an array 
+  [1,'hello',true,{name:'pav'},[1,2]]
+. console.log(typeof [1,2]);
+  // object
+  So an array is a special type of object.
+
+. TO check type of array  -> typeof
+  ----------------------
+  console.log(typeof [1,2]);
+
+
+. To check an array  ->  isArray()
+  ----------------- 
+  Arrays.isArray([1,2])  //true
+
+
+. console.log(arr.length);
+  arr.push(100);
+
+
+. To remove value from array -> splice()
+  --------------------------
+  2 numbers are taken 
+  1) index we want to remove (start idx)
+  2) no of values to remove (how many)
+
+  arr= [10,20,30,40];
+  arr.splice(1,2);  // [10,40];
+
+
+
+
+
+
+
+
