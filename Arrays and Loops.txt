@@ -35,10 +35,37 @@ Arrays  []
   arr= [10,20,30,40];
   arr.splice(1,2);  // [10,40];
 
+. Arrays are references. Name of the array points in computer memory where the array is. 
+  const array1 = [1,2,3]
+  const array2 = array1 //it does not contain copy of values but the reference.
 
+. array2.push(4)
+  console.log(array1) // [1,2,3,4]
+  console.log(array2) // [1,2,3,4]
+  Both are modified since arrays are references
 
+. To maintain a copy but not reference, we use slice() method
+  const array2 = array1.slice()
 
+. Destructuring
+  -------------
+  const [first, second] = [1,2,3]   // first = 1, second = 2
 
+Loops
+-----
+1) for loop     for(initialize, condition, iterate)
+2) while loop
+
+for(let i=0; i<arr.length; i++){}
+
+let j=0
+while(j<arr.length){
+    j++;
+}
+
+. Loops contains statements called continue and break
+   break = exit the loop early
+   continue = skip 1 iteration 
 
 
 
